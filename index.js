@@ -63,8 +63,8 @@ for (let i = 0; i < n - 1; i++) {
     }
     
     // Reset color
-    bar1.style.backgroundColor = 'yellow';
-    bar2.style.backgroundColor = 'yellow';
+    bar1.style.backgroundColor = '#007bff';
+    bar2.style.backgroundColor = '#007bff';
   }
 }
  selectionSortBtn.disabled=false;
@@ -99,8 +99,8 @@ async function selectionSort() {
         }
         
         // Reset color
-        bar1.style.backgroundColor = 'yellow';
-        bar2.style.backgroundColor = 'yellow';
+        bar1.style.backgroundColor = '#007bff';
+        bar2.style.backgroundColor = '#007bff';
       }
     }
     
@@ -154,8 +154,8 @@ if (largest !== i) {
   swapBars(bars[i], bars[largest]);
   
   // Reset color
-  bar1.style.backgroundColor = 'yellow';
-    bar2.style.backgroundColor = 'yellow';
+  bars[i].style.backgroundColor = '#007bff';
+  bars[largest].style.backgroundColor = '#007bff';
   
   // Heapify the affected sub-tree
   await heapify(bars, n, largest);
